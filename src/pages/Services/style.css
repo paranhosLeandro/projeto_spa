@@ -1,0 +1,6 @@
+.container-services{
+    display: flex;
+    flex-wrap: wrap;
+justify-content: center;
+height: 490px;
+}

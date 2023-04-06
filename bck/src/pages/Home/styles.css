@@ -1,0 +1,32 @@
+.container-home{
+    height: calc(100vh-120px);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+}
+
+img{
+    height: 400px;
+}
+.container-home div{
+    max-width: 500px;
+}
+
+.container-home div h1{
+    margin: 20px 0;
+}
+
+.container-home div p{
+    margin: 20px 0;
+}
+
+.container-home div button{
+    background-color: #6ab04c;
+    width: 150px;
+    border-radius: 20px;
+    border:none;
+    height: 35px;
+    font-weight: bold;
+  
+}

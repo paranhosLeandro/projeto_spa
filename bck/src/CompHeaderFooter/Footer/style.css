@@ -1,0 +1,10 @@
+footer{
+    background-color: #6ab04c;
+    height: 65px;
+    /*Padrao*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
