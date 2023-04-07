@@ -7,34 +7,36 @@ import "./StyleCheck.css";
 function Check(lista) {
   // State with list of all checked item
   const [checked, setChecked] = useState([]);
+  const [pedidox, setPedidox] = useState('');
+  let pedido = lista.pedido;
  // alert(lista.valor)
   const checkList = lista.valor;//["Apple", "Banana", "Tea", "Coffee"];
 
+   // Generate string of checked items
+   let checkedItems = checked.length
+   ? checked.reduce((total, item) => {
+     
+       return total + ", " + item;
+     })
+   : "0";
+
+  if (pedido=='p'&&pedidox==''){
+   checkedItems = '0';
+  }
   // Add/Remove checked item from list
   const handleCheck = (event) => {
+
     var updatedList = [...checked];
     if (event.target.checked) {
       updatedList = [...checked, event.target.value];
     } else {
       updatedList.splice(checked.indexOf(event.target.value), 1);
     }
+    setPedidox('b')
     setChecked(updatedList);
   };
 
-  // Generate string of checked items
-  let checkedItems = checked.length
-    ? checked.reduce((total, item) => {
-        return total + ", " + item;
-      })
-    : "0";
-
-    if (lista.pedido==''){
-     //let updatedList = [];
-    // let updatedList = [...checked, false];
-     // setChecked(updatedList);
-     checkedItems = '0';
-    // setChecked([false,false,false]);
-    }
+ 
    
 
   // Return classes based on whether item is checked

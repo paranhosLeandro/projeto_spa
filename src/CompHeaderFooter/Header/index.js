@@ -8,7 +8,7 @@ const Header = ()=>{
             <h1>InTermedio Kit Cervejas S.A.</h1>
             <ul>
                 <li><Link to="/"><a>Principal</a></Link></li>
-                <li><Link to="/Services"><a>Pedido</a></Link></li>
+                <li><Link to="/Services/?orig=2"><a>Pedido</a></Link></li>
                 <li><Link to="/Contato"><a>Contato</a></Link></li>
             </ul>
             </main>

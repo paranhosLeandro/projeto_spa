@@ -81,7 +81,7 @@ const BtSalvar = (checkit) => {
        
         
       
-        <div>Iten(s) salvo(s) com sucesso!</div>
+        <div>Iten(s) Enviado(s) com sucesso!</div>
         <div className="container-st">
           <ul>
         <ol>

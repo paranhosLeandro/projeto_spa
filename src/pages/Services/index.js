@@ -1,7 +1,7 @@
 import CompServ from "../../CompHeaderFooter/CompServices";
 import './style.css';
 
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams,useParams } from "react-router-dom";
 
 
 
@@ -15,11 +15,12 @@ import { useSearchParams } from "react-router-dom";
 
 const Services = ()=>{
     const [searchParams] = useSearchParams();
+    const { orig } = useParams();
     //GetParam();
    // alert(GetParam());
     return (
         <div className="container-services">
-            <CompServ name={searchParams.get('id')}/>
+            <CompServ name={searchParams.get('id')} orig={orig}/>
         </div>
     )
 }

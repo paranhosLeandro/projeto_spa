@@ -1,6 +1,6 @@
 import Logo1 from '../../img/amstel.png';
 import Logo2 from '../../img/antar.jpg';
-import Logo3 from '../../img/hein.jpg';
+import Logo3 from '../../img/hein2.jpg';
 import Logo4 from '../../img/bud.png';
 import Logo5 from '../../img/colonia.png';
 import Logo6 from '../../img/brahma.jpg';
@@ -15,7 +15,7 @@ const Home = ()=>{
     return (
         <main className='container-home'>
             <div className='container-div-img'>
-          <Link to={'/Services/?id='+logo1}> <img src={Logo1} alt='Logo'/></Link>
+          <Link to={'/Services/?id=Amstel'}> <img src={Logo1} alt='Logo'/></Link>
           <Link to={'/Services/?id=Antarctica'}><img src={Logo2} alt='Logo'/></Link>
           <Link to={'/Services/?id=Heineken'}><img src={Logo3} alt='Logo'/></Link>
           <Link to={'/Services/?id=Budweiser'}><img src={Logo4} alt='Logo'/></Link>

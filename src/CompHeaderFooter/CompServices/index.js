@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { useEffect } from 'react';
 import Check from '../../CompHtml/Check';
 import {Axios} from 'axios';
+import { useSearchParams,useParams } from "react-router-dom";
 
 const teste = async ()=>{
     const teste1 = await Axios.post('http://localhost:3000/Services', 
@@ -18,6 +19,7 @@ const teste = async ()=>{
 
 const exibeMsg = ()=>{
 
+
     //alert({Check});
     console.log(Check)
 
@@ -25,14 +27,17 @@ const exibeMsg = ()=>{
 }
 
 const CompServices = ({name = 'Sem nome'})=>{
+
+   
+   // alert (name)
    
     let nome='';
-    let pedido='at'
+    let pedido=''
 
     if (name==''||name==null)
     {
         nome='Heineken';
-        pedido='';
+        pedido='p';
     }else{
         nome=name
     };
