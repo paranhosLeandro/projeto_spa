@@ -29,12 +29,12 @@ const ContatoBtSalvar =(conteudo)=>{
              } 
          });
      }*/
-     
+
     let vazio = '';
     let tot = arr.length;
     let tt = conteudo.tit;
     let msg;
-    if (tit==''||mail==''||desc==''){
+    if (tit==undefined||mail==undefined||desc==undefined){
         msg =() =>  toast('Todos os campos devem ser preenchido!')
     }else{
         msg =() =>  toast('Sua solicitação voi enviada com sucesso, em breve entraremos em contato!')

@@ -21,7 +21,7 @@ const Contato = ()=>{
                 Digite a sugestão no campo dscrição.
 
                 <div className='container-form'>
-                    <input placeholder='Nome' onChange={(txt)=>setTitulo(txt.target.value)}/>
+                    <input placeholder='Nome' onChange={(txt)=>setTitulo(txt.target.value==''?'':txt.target.value)}/>
                     <input placeholder='E-mail' onChange={(txt)=>setEmail(txt.target.value)}/>
                     <textarea placeholder='Descricao' onChange={(txt)=>setDesc(txt.target.value)}/>
                     <ContatoBtSalvar tit={titulo} mail={email} desc={desc}/>
