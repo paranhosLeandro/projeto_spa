@@ -22,12 +22,19 @@ function Check(lista) {
   };
 
   // Generate string of checked items
-  const checkedItems = checked.length
+  let checkedItems = checked.length
     ? checked.reduce((total, item) => {
         return total + ", " + item;
       })
     : "0";
 
+    if (lista.pedido==''){
+     //let updatedList = [];
+    // let updatedList = [...checked, false];
+     // setChecked(updatedList);
+     checkedItems = '0';
+    // setChecked([false,false,false]);
+    }
    
 
   // Return classes based on whether item is checked

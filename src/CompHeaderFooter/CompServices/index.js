@@ -27,8 +27,15 @@ const exibeMsg = ()=>{
 const CompServices = ({name = 'Sem nome'})=>{
    
     let nome='';
+    let pedido='at'
 
-    if (name==''||name==null){nome='Heineken'}else{nome=name};
+    if (name==''||name==null)
+    {
+        nome='Heineken';
+        pedido='';
+    }else{
+        nome=name
+    };
     let arr = ['Camisa','Bone','Copo'];
    // let [nome,setNome] = useState('');
   //  setNome('Amstel');
@@ -38,7 +45,7 @@ const CompServices = ({name = 'Sem nome'})=>{
 
         <div >
         Selecione os itens que deseja:
-            <Check valor={arr} nome={nome}/>
+            <Check valor={arr} nome={nome} pedido={pedido}/>
         </div>
         </main>
     )
